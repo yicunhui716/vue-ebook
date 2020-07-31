@@ -1,21 +1,11 @@
 <template>
   <div id="app">
-    <span class="test">ABCD</span>
-    <router-view/>
+     <router-view/>
   </div>
 </template>
 <script>
-import {mapGetters} from 'vuex'
-export default {
-  computed:{
-    ...mapGetters(['test'])
-  },
-  mounted(){
-    this.$store.dispatch('setTest',9).then(()=>{
-      console.log(this.test)
-    })
-  }
-}
+
+export default {}
 //字体最大保持50px
 document.addEventListener('DOMContentLoaded', () => {
   const html = document.querySelector('html')
@@ -26,7 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </script>
 <style>
-/* .test{
-  font-family: 'Days One';
-} */
+#app{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 </style>

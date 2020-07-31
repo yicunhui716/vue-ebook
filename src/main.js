@@ -3,8 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './assets/styles/icon.css'
-import './assets/fonts/daysOne.css'
-
+import './assets/styles/reset.scss'
 Vue.config.productionTip = false
 
 new Vue({
